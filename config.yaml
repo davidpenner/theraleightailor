@@ -1,0 +1,21 @@
+baseURL: https://trt-draft.netlify.app
+disableKinds:
+  - section
+  - taxonomy
+  - term
+  - RSS
+  - robotsTXT
+defaultContentLanguage: en
+theme: hugo-scroll
+title: The Raleigh Tailor
+params:
+  favicon: images/favicon.png
+  images:
+    - images/cover-image.jpg
+  title_guard: false
+  title: Concierge Alterations and Sewing Solutions
+  description: text only description for meta tag goes here
+  meta:
+    keywords: Clothing alteration,Custom tailor,Tailor,Sewing shop,Hemming
+  copyright: © The Raleigh Tailor
+  hidedesignbyline: true
