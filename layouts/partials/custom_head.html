@@ -1,3 +1,5 @@
+{{- $slickstyle := slice (resources.Get "css/slick.css") (resources.Get "css/slick-theme.css") | resources.Concat "css/slicks.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $slickstyle.RelPermalink }}" media="all">
 <style>
     #site-head {
         background: #ccc no-repeat center center;
