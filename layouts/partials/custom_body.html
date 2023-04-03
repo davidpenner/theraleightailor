@@ -1,0 +1,5 @@
+{{ $slick := resources.Get "js/slick.min.js" }}
+{{ $slideshow := resources.Get "js/slideshow.js" }}
+{{ $sjs := slice $slick $slideshow | resources.Concat "js/script2.js" | resources.Minify | resources.Fingerprint }}
+
+<script src="{{ $sjs.Permalink }}" integrity="{{ $sjs.Data.Integrity }}" ></script>
